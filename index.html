@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Store</title>
+</head>
+<body>
+  <nav>
+    <div class="logo"></div>
+    <div class="title">Amazing store</div>
+    <div class="basket">
+      <div class="count">5</div>
+    </div>
+  </nav>
+  <div id="showcase">
+    <div class="card">
+      <img src="img/goods/huawei-mate-10-pro.jpg" alt="huawei-mate-10-pro"/>
+      <div class="model">Model: <span>Huawei mate 10 PRO</span></div>
+      <div class="price">price: <span>10000</span> UAH</div>
+      <div class="brand">Brand: <span>Huawei</span></div>
+      <div class="description">Description: <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, maiores!</span></div>
+      <div class="add">Add to basket</div>
+    </div>
+  </div>
+  <div class="basket-modal" data-cancel="true">
+    <div class="content">
+      <div class="cancel-btn" data-cancel="true">X</div>
+      <h2 class="title"></h2>
+      <div class="row">
+        <img class="icon">454</img>
+        <div class="model"></div>
+        <div class="count"></div>
+        <div class="delete-btn"></div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>

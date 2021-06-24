@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  position: relative;
+  height: 100vh;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+}
+nav {
+  height: 70px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #eed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #334;
+  box-shadow: 1px 1px 2px 1px black;
+}
+nav .logo,
+nav .basket {
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+nav .logo {
+  background-image: url("img/logo.png");
+}
+nav .title {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 4px;
+}
+nav .basket {
+  position: relative;
+  background-image: url("img/basket.png");
+}
+nav .basket .count {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  color: #eed;
+  text-align: center;
+}
+
+#showcase {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#showcase .card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  border: 1px solid #334;
+  background-color: #eed;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px #334;
+}
+#showcase .card img {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+#showcase .card .model,
+#showcase .card .brand,
+#showcase .card .price,
+#showcase .card .description {
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #37e;
+}
+#showcase .card .model span,
+#showcase .card .brand span,
+#showcase .card .price span,
+#showcase .card .description span {
+  text-transform: none;
+  color: #334;
+}
+#showcase .card .add {
+  align-self: center;
+  display: flex;
+  width: 50%;
+  height: 30px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #37e;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #eed;
+  background-color: #37e;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 1px 1px 2px 2px #334;
+}
+#showcase .card .add:hover {
+  background-color: #39f;
+}
+
+.basket-modal {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.basket-modal .content {
+  position: relative;
+  width: 60%;
+  background-color: #eed;
+  min-height: 300px;
+  border-radius: 20px;
+  cursor: default;
+}
+.basket-modal .content .cancel-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+  background-color: red;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #eed;
+  cursor: pointer;
+}
