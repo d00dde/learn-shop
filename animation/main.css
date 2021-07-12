@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  box-sizing: content-box;
+  background-color: #ddd;
+}
+.control {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control .test-btn {
+  text-transform: uppercase;
+  padding: 30px;
+  border-radius: 30px;
+  border: 2px solid #2196f3;
+  color: #2196f3;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+.control .test-btn:hover {
+  color: #ddd;
+  background-color: #2196f3;
+}
+.container {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .field {
+  width: 100px;
+  height: 100px;
+  background-color: #ed3;
+  border: 2px solid black;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .field.right {
+  margin-left: 1700px;
+}
+
+.container .field:nth-child(1) {
+  transition: margin-left 3s linear;
+}
+
+.container .field:nth-child(2) {
+  transition: margin-left 3s ease-in-out;
+}
+
+.container .field:nth-child(3) {
+  transition: margin-left 3s ease-in;
+}
+
+.container .field:nth-child(4) {
+  transition: margin-left 3s ease-out;
+}
