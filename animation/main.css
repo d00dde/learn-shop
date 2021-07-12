@@ -27,6 +27,7 @@ body {
   background-color: #2196f3;
 }
 .container {
+  position: relative;
   display: flex;
   height: 80vh;
   flex-direction: column;
@@ -60,4 +61,37 @@ body {
 
 .container .field:nth-child(4) {
   transition: margin-left 3s ease-out;
+}
+
+.container .field:nth-child(5) {
+  transition: margin-left 3s cubic-bezier(0.58, 1.51, 0.37, -0.53);
+}
+
+.container .animated {
+  position: absolute;
+  left: 50px;
+  top: -30px;
+  width: 300px;
+  height: 300px;
+  border: 10px solid black;
+  animation: crazy-animation 10s linear 2s infinite;
+}
+
+@keyframes crazy-animation {
+  0%,
+  100% {
+  }
+  25% {
+    left: 60%;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 0;
+  }
+  50% {
+    top: 40vh;
+    height: 50px;
+    width: 300px;
+    background-color: #fed;
+    border-radius: 50%;
+  }
 }
